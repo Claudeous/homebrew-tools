@@ -5,21 +5,21 @@
 class Claudeignore < Formula
   desc "Sync gitignore rules to Claude Code sandbox"
   homepage "https://github.com/Claudeous/claudeignore"
-  version "0.0.4-alpha"
+  version "0.0.5-alpha"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Claudeous/claudeignore/releases/download/v0.0.4-alpha/claudeignore_darwin_amd64.tar.gz"
-      sha256 "2a2c0ba0bfd191fe2609dab78608d5d4c9fafcfd70327365da083aee69b9e04f"
+      url "https://github.com/Claudeous/claudeignore/releases/download/v0.0.5-alpha/claudeignore_darwin_amd64.tar.gz"
+      sha256 "d41b8b483e46c2ce9e8a1d2a16d3af235e360cf815b4f50cd017bd0f140c5cc1"
 
       define_method(:install) do
         bin.install "claudeignore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Claudeous/claudeignore/releases/download/v0.0.4-alpha/claudeignore_darwin_arm64.tar.gz"
-      sha256 "cf7ba0ec5c63cf9e44bc035b212abaaae862c3edf378f38a11d2c29e5ea3fa59"
+      url "https://github.com/Claudeous/claudeignore/releases/download/v0.0.5-alpha/claudeignore_darwin_arm64.tar.gz"
+      sha256 "6937233eaa02598ac58e192a91aa54a272e7ed930c43947ab6eba809d3dd1b52"
 
       define_method(:install) do
         bin.install "claudeignore"
@@ -29,15 +29,15 @@ class Claudeignore < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Claudeous/claudeignore/releases/download/v0.0.4-alpha/claudeignore_linux_amd64.tar.gz"
-      sha256 "d2dcdbdf6c06dcab63aad57feca1e32d3d7394f3e7b9a073009232736e531be3"
+      url "https://github.com/Claudeous/claudeignore/releases/download/v0.0.5-alpha/claudeignore_linux_amd64.tar.gz"
+      sha256 "f71c0b53c5928d32c56be29c3622dbddba007a745f3244c3a22197158424f897"
       define_method(:install) do
         bin.install "claudeignore"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Claudeous/claudeignore/releases/download/v0.0.4-alpha/claudeignore_linux_arm64.tar.gz"
-      sha256 "17a222b2d30a4103cca412a006035525cca508104536b47fbb70d56090e2b184"
+      url "https://github.com/Claudeous/claudeignore/releases/download/v0.0.5-alpha/claudeignore_linux_arm64.tar.gz"
+      sha256 "6b0675432e7adee6f6673a9d3b604ec21af956e5174ed878ec614f0e2b40c9b5"
       define_method(:install) do
         bin.install "claudeignore"
       end
